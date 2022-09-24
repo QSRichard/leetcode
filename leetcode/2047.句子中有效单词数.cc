@@ -6,6 +6,7 @@
 #include <string>
 using namespace std;
 
+
 class Solution {
 public:
   int countValidWords(string sentence) {
