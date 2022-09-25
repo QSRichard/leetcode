@@ -50,7 +50,7 @@ private:
         {
             ans = max(ans, left + right + root->val);
         }
-        ans = max(ans, max(root->val + left + right,max(root->val + right, root->val + left)));
+        ans = max(ans, max(root->val, max(root->val + right, root->val + left)));
         
         return max(root->val + max(left, right), root->val);
     }
